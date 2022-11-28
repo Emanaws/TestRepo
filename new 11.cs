@@ -132,9 +132,12 @@ namespace ForEach
                     Console.WriteLine("Please Enter Your Name");
                     str = Console.ReadLine().ToString();
                     Console.WriteLine("Converted string is: " +  str.ToUpper()); 
-            */ 
-
-            Console.ReadLine();
+             */
+			 Console.WriteLine("please enter your name");
+            string str = Console.ReadLine().ToString();
+            string result = str.Substring(0,1).ToUpper() + str.Substring(1);
+                Console.WriteLine(result);
+               Console.ReadLine();
         }
     }
 }
